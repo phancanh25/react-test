@@ -18,7 +18,7 @@ export const TodoWrapper = () => {
     e.preventDefault();
     const findUsers =
       contactInit && contactInit?.length > 0
-        ? contactInit?.filter((c) => c?.name === text)
+        ? contactInit.filter((c) => c.name.includes(text))
         : undefined;
     setContacts(findUsers);
   };
