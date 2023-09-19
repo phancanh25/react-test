@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Todo } from "./Todo";
+import { User } from "./User";
 
 export const TodoWrapper = () => {
   const contactInit = [
@@ -44,7 +44,7 @@ export const TodoWrapper = () => {
       {contacts &&
         contacts?.length > 0 &&
         contacts?.map((contact) => (
-          <Todo
+          <User
             key={contact.id}
             name={contact.name}
             age={contact.age}

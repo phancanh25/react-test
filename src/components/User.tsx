@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { UserProps } from "./User.types";
-export const Todo = ({ name, age, designation }: UserProps) => {
+export const User = ({ name, age, designation }: UserProps) => {
   const [display, setDisplay] = useState(false);
   const handleDisplay = () => {
     setDisplay(!display);
